@@ -34,6 +34,7 @@ import 'swiper/css/pagination'
 
 const navItems = [
   { label: 'Women', href: '#shop-categories' },
+  { label: 'Men', href: '#mens-collection' },
   { label: 'Kids', href: '#shop-categories' },
   { label: 'New Arrivals', href: '#best-sellers' },
   { label: 'Collections', href: '#heritage' },
@@ -227,8 +228,8 @@ function Hero() {
       >
         <SwiperSlide>
           <div className="hero-slide hero-slide-primary">
-            <img src="/images/hero-prakriti.jpg" alt="Woman wearing a red Banarasi saree in a heritage setting" className="hero-image" />
-            <div className="hero-shade" />
+            <img src="/images/mens-collection.png" alt="Men wearing classic Indian kurtas in a heritage courtyard" className="hero-image" />
+            <div className="hero-shade hero-shade-warm" />
             <div className="site-container hero-content-wrap">
               <motion.div
                 className="hero-content"
@@ -236,10 +237,10 @@ function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
               >
-                <p className="hero-eyebrow">Tradition in every thread</p>
-                <h1>Woven Stories<br />Timeless You</h1>
-                <p className="hero-description">Celebrate the richness of Indian weaves —<br className="desktop-break" /> from Sambalpuri to Banarasi.<br />For every woman. For every moment.</p>
-                <a href="#heritage" className="primary-button">Explore Collections <ArrowRight size={17} /></a>
+                <p className="hero-eyebrow">Tradition, tailored for him</p>
+                <h1>Modern Roots.<br />Timeless Style.</h1>
+                <p className="hero-description">Classic kurtas made for celebrations,<br className="desktop-break" /> crafted with quiet confidence.<br />For every man. For every moment.</p>
+                <a href="#mens-collection" className="primary-button">Shop Men's Collection <ArrowRight size={17} /></a>
               </motion.div>
 
               <div className="hero-usps" aria-label="Our promises">
@@ -447,8 +448,8 @@ function BestSellers() {
 
 function CampaignBanner() {
   return (
-    <section className="campaign" aria-label="Earthy Elegance new collection">
-      <img src="/images/earthy-banner.jpg" alt="Earthy elegance collection with an ivory kurta and traditional clay pottery" />
+    <section className="campaign" id="mens-collection" aria-label="Men's kurta collection">
+      <img src="/images/mens-collection.png" alt="Men wearing classic Indian kurtas in a warm heritage courtyard" />
       <div className="site-container campaign-inner">
         <motion.div
           className="campaign-copy"
@@ -456,10 +457,10 @@ function CampaignBanner() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <span>New Collection</span>
-          <h2>Earthy Elegance</h2>
-          <p>Inspired by nature. Made for her.</p>
-          <a href="#best-sellers" className="primary-button compact">Shop the Collection</a>
+          <span>Men's Collection</span>
+          <h2>Heritage, Tailored</h2>
+          <p>Classic silhouettes. Made for every celebration.</p>
+          <a href="#best-sellers" className="primary-button compact">Shop Men's Kurtas</a>
         </motion.div>
       </div>
     </section>

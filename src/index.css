@@ -271,6 +271,10 @@ img {
   background: linear-gradient(90deg, rgba(255, 248, 235, 0.14) 0%, rgba(255, 248, 235, 0) 56%);
 }
 
+.hero-shade-warm {
+  background: linear-gradient(90deg, rgba(255, 244, 225, 0.82) 0%, rgba(255, 235, 210, 0.3) 42%, rgba(71, 25, 12, 0.04) 70%);
+}
+
 .hero-content-wrap {
   position: relative;
   height: 100%;
